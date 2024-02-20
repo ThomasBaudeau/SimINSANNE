@@ -1,0 +1,149 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-01-29T15:15:38+0000 :/opt/conda/conda-bld/star_1706541070242/work/source
+##### Command Line:
+/home/baudeau/Documents/TThèse/ProjetBatoul/.snakemake/conda/50cffa1d5674ffc5a2a063f4c835eead_/bin/STAR-avx2 --genomeDir /tmp/tmp.EPXBnUjbNb --runThreadN 6 --readFilesIn read_mut.fasta --outFileNamePrefix read_mut --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 read_mut
+###### All USER parameters from Command Line:
+genomeDir                     /tmp/tmp.EPXBnUjbNb     ~RE-DEFINED
+runThreadN                    6     ~RE-DEFINED
+readFilesIn                   read_mut.fasta        ~RE-DEFINED
+outFileNamePrefix             read_mut     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+outSAMunmapped                Within        ~RE-DEFINED
+outSAMattributes              Standard        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        6
+genomeDir                         /tmp/tmp.EPXBnUjbNb
+readFilesIn                       read_mut.fasta   
+outFileNamePrefix                 read_mut
+outSAMtype                        BAM   SortedByCoordinate   
+outSAMattributes                  Standard   
+outSAMunmapped                    Within   
+
+-------------------------------
+##### Final effective command line:
+/home/baudeau/Documents/TThèse/ProjetBatoul/.snakemake/conda/50cffa1d5674ffc5a2a063f4c835eead_/bin/STAR-avx2   --runThreadN 6   --genomeDir /tmp/tmp.EPXBnUjbNb   --readFilesIn read_mut.fasta      --outFileNamePrefix read_mut   --outSAMtype BAM   SortedByCoordinate      --outSAMattributes Standard      --outSAMunmapped Within   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /home/baudeau/Documents/TThèse/ProjetBatoul/.snakemake/conda/50cffa1d5674ffc5a2a063f4c835eead_/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 6   --genomeDir /tmp/tmp.EPXBnUjbNb   --genomeFastaFiles data/ref.fasta   
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              data/ref.fasta        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  0     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   -     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               262144   74253        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	U26942.1	9000	0
+Started loading the genome: Tue Feb 20 17:28:56 2024
+
+Genome: size given as a parameter = 262144
+SA: size given as a parameter = 74253
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=262144;  nSAbyte=74253
+GstrandBit=32   SA number of indices=18000
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 262144 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 262144 bytes
+SA file size: 74253 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 74253 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Tue Feb 20 17:28:56 2024
+
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #3
+Completed: thread #4
+Completed: thread #5
+Completed: thread #0
+BAM sorting: 5999 mapped reads
+BAM sorting bins genomic start loci:
+1	0	176
+2	0	353
+3	0	542
+4	0	730
+5	0	932
+6	0	1100
+7	0	1297
+8	0	1465
+9	0	1637
+10	0	1803
+11	0	1987
+12	0	2145
+13	0	2322
+14	0	2471
+15	0	2630
+16	0	2811
+17	0	3006
+18	0	3187
+19	0	3353
+20	0	3562
+21	0	3729
+22	0	3940
+23	0	4114
+24	0	4310
+25	0	4477
+26	0	4630
+27	0	4809
+28	0	4974
+29	0	5133
+30	0	5292
+31	0	5489
+32	0	5662
+33	0	5836
+34	0	6048
+35	0	6272
+36	0	6467
+37	0	6645
+38	0	6816
+39	0	7009
+40	0	7194
+41	0	7387
+42	0	7562
+43	0	7735
+44	0	7885
+45	0	8096
+46	0	8288
+47	0	8454
+48	0	8631
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Feb 20 17:28:57 ..... finished mapping
+RAM after mapping:
+VmPeak:	 2683864 kB; VmSize:	 2610132 kB; VmHWM:	 2142848 kB; VmRSS:	 2140980 kB; 
+RAM after freeing genome index memory:
+VmPeak:	 2683864 kB; VmSize:	 1080696 kB; VmHWM:	 2142848 kB; VmRSS:	  611600 kB; 
+Feb 20 17:28:57 ..... started sorting BAM
+Max memory needed for sorting = 46723
+ALL DONE!
