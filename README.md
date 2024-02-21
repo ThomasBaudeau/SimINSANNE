@@ -68,9 +68,7 @@ snakemake -c1 --use-conda all
 
 #Utilisation Samtool
 ```
-conda activate snakemake
-Dans le répertoire SimINSANNE
-snakemake -c1 --use-conda all
+   "samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTI.bam ; samtools index NOMDUFICHIERMDTAG.bam
 ```
 
 #Utilisation JACUSA2
