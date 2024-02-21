@@ -25,7 +25,7 @@ rule induce_mutation:
         'art_out.aln',
         'art_out.fq'
     output:
-        temp('read_mut.fasta')
+        'read_mut.fasta'
     params:
         mut = MUT,
         r_len=R_LEN,
