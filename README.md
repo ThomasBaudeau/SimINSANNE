@@ -15,8 +15,43 @@ cd ../..
 sudo apt install samtools
 ```
 
-#Utilisation
+#Utilisation SimINSSANE
+```
+conda activate snakemake
+Dans le répertoire SimINSANNE
+snakemake -c1 --use-conda all
+```
 
+#Utilisation STAR
+
+(Outil de mapping)
+```
+cd tools/STAR
+Pour le lancer:
+./STAR 
+Dans le répertoire SimINSANNE
+snakemake -c1 -
+```
+
+
+#Utilisation BWA-MEM
+
+(Outil de mapping)
+```
+conda activate snakemake
+Dans le répertoire SimINSANNE
+snakemake -c1 --use-conda all
+```
+
+#Utilisation Samtool
+```
+conda activate snakemake
+Dans le répertoire SimINSANNE
+snakemake -c1 --use-conda all
+```
+
+#Utilisation JACUSA2
+```
 conda activate snakemake
 Dans le répertoire SimINSANNE
 snakemake -c1 --use-conda all
