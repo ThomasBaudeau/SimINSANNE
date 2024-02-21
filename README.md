@@ -33,19 +33,27 @@ regarder l'extension :
 Si .GZ cela veut dire que le fichier est compréssé.
 si fichier rouge:
 sudo chmod 777 NOMDUFICHIER
-SI BEUG avec .GZ pour le décompresser commande suivante: 
+SI BEUG avec TAR.GZ pour le décompresser commande suivante: 
 tar xzvf nom_archive.tar.gz
+
+ou 
+si que .gz
+gunzip NOMDUFICHIER
+
+
+Pour télécgarger:
+wget URL 
 '''
 #Utilisation STAR
 
 (Outil de mapping)
 ```
-cd tools/STAR/bin/Linux_x86_64
+cd tools/STAR/bin/Linux_x86_64   #pour aller à l'endroit pour lancer STAR
 Pour le lancer:
 test=$(mktemp -d);
 ./STAR --runThreadN 6 --runMode genomeGenerate --genomeDir $test --genomeFastaFiles NOMFICHIERREFERENCE
-Dans le répertoire SimINSANNE
-snakemake -c1 -
+./STAR --genomeDir $test --runThreadN 6 --readFilesIn NOMDUFICHIERDEREAD --outFileNamePrefix LENOMDELASORTI --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard"
+
 ```
 
 
