@@ -74,11 +74,17 @@ snakemake -c1 --use-conda all
 #Utilisation JACUSA2
 ```
 Il faut aller dans le repertoire de JACUSA2
-puis dans: bin/JACUSA2/target/
+puis dans: bin/
 Ensuite:
+```
+- Si tu veux faire xp pour trouver les points d'arrets:
+```
 java -jar JACUSA2-2.0.2.jar call-1 -r NOMDUFICHIERRESULTAT NOMDUFICHIERMDTAG.bam
 ```
-
+-Si tu veux faire xp pour trouver les mutations:
+```
+```
+```
 
 #Utilisatation de Nanocompore:
 
