@@ -68,7 +68,7 @@ snakemake -c1 --use-conda all
 
 #Utilisation Samtool
 ```
-   "samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTI.bam ; samtools index NOMDUFICHIERMDTAG.bam
+   "samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTI.bam ; samtools index NOMDUFICHIERDESORTI.bam
 ```
 
 #Utilisation JACUSA2
