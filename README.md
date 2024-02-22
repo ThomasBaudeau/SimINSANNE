@@ -78,3 +78,21 @@ puis dans: bin/JACUSA2/target/
 Ensuite:
 java -jar JACUSA2-2.0.2.jar call-1 -r NOMDUFICHIERRESULTAT NOMDUFICHIERMDTAG.bam
 ```
+
+
+#Utilisatation de Nanocompore:
+
+- activer l'environement conda de Nanocompore avec:
+```
+conda activate nanocompore
+```
+- 1er étape pré-traitement des base non caller (fichier FAST5):
+  
+```
+TODO
+```
+-2ieme étape:
+```
+TODO
+```
+
