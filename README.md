@@ -68,7 +68,9 @@ snakemake -c1 --use-conda all
 
 #Utilisation Samtool
 ```
-   "samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTISAM.bam ; samtools index NOMDUFICHIERDESORTISAM.bam
+   samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTISAM.bam ;#pour creer le fichier avec MD tag pour JACUSA
+#puis
+    samtools index NOMDUFICHIERDESORTISAM.bam #pour obtenir le .bai 
 ```
 
 #Utilisation JACUSA2
