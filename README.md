@@ -73,7 +73,8 @@ snakemake -c1 --use-conda all
 
 #Utilisation JACUSA2
 ```
-conda activate snakemake
-Dans le répertoire SimINSANNE
-snakemake -c1 --use-conda all
+Il faut aller dans le repertoire de JACUSA2
+puis dans: bin/JACUSA2/target/
+Ensuite:
+java -jar JACUSA2-2.0.2.jar call-1 -r NOMDUFICHIERRESULTAT NOMDUFICHIERMDTAG.bam
 ```
