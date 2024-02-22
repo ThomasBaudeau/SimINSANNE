@@ -51,7 +51,7 @@ wget URL
 cd tools/STAR/bin/Linux_x86_64   #pour aller à l'endroit pour lancer STAR
 Pour le lancer:
 test=$(mktemp -d);
-./STAR --runThreadN 6 --runMode genomeGenerate --genomeDir $test --genomeSAindexNbases 5 --genomeFastaFiles NOMFICHIERREFERENCE
+./STAR --runThreadN 6 --runMode genomeGenerate --genomeDir $test --genomeSAindexNbases 11 --genomeFastaFiles NOMFICHIERREFERENCE
 ./STAR --genomeDir $test --runThreadN 6 --readFilesIn NOMDUFICHIERDEREAD --outFileNamePrefix LENOMDELASORTI --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard"
 
 ```
