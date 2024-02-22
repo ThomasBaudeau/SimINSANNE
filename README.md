@@ -68,7 +68,7 @@ snakemake -c1 --use-conda all
 
 #Utilisation Samtool
 ```
-   "samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTI.bam ; samtools index NOMDUFICHIERDESORTI.bam
+   "samtools calmd -b NOMDUFICHIERDALIGNEMENT NOMDELAREFERENCE > NOMDUFICHIERDESORTISAM.bam ; samtools index NOMDUFICHIERDESORTISAM.bam
 ```
 
 #Utilisation JACUSA2
@@ -79,12 +79,14 @@ Ensuite:
 ```
 - Si tu veux faire xp pour trouver les points d'arrets:
 ```
-java -jar JACUSA2-2.0.2.jar call-1 -r NOMDUFICHIERRESULTAT NOMDUFICHIERMDTAG.bam
+$ java -jar jacusa2.jar rt-arrest -P FR-SECONDSTRAND -o NOMDUFICHIERFINAL NOMDUFICHIERDESORTISAM.bam_condition1_1.bam, NOMDUFICHIERDESORTISAM_condition2_M.bam
 ```
 -Si tu veux faire xp pour trouver les mutations:
 ```
+java -jar JACUSA2-2.0.2.jar call-1 -r NOMDUFICHIERFINAL NOMDUFICHIERDESORTISAM.bam
 ```
-```
+
+
 
 #Utilisatation de Nanocompore:
 
